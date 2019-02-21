@@ -28,11 +28,11 @@ module.exports = {
         use: [
           { loader: 'style-loader' },
           {
-            loader: 'css-loader',
+            loader: 'typings-for-css-modules-loader',
             options: {
               modules: true,
-              localIdentName: '[path][name]__[local]--[hash:base64:5]',
-              camelCase: true,
+              namedExport: true,
+              sass: true,
             },
           },
           { loader: 'sass-loader' },

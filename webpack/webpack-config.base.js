@@ -16,7 +16,7 @@ module.exports = {
         options: {
           emitErrors: true,
         },
-        include: [path.resolve(__dirname, 'src')],
+        include: [path.resolve(__dirname, '../src')],
       },
       {
         test: /\.tsx?$/,
@@ -37,7 +37,7 @@ module.exports = {
           },
           { loader: 'sass-loader' },
         ],
-        include: [path.resolve(__dirname, 'src')],
+        include: [path.resolve(__dirname, '../src')],
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -54,7 +54,7 @@ module.exports = {
     ],
   },
   resolve: {
-    modules: ['node_modules', path.resolve(__dirname, 'src')],
+    modules: ['node_modules', path.resolve(__dirname, '../src')],
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   plugins: [

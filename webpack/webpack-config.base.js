@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '../../dist'),
+    path: path.resolve(__dirname, '../dist'),
   },
   module: {
     rules: [
@@ -18,11 +18,10 @@ module.exports = {
         },
         include: [path.resolve(__dirname, 'src')],
       },
-      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
       {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.(scss|sass)$/,

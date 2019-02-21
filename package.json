@@ -32,7 +32,7 @@
     "webpack-merge": "^4.2.1"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack-config.dev.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack-config.dev.js",
     "build": "npm run clean && cross-env NODE_ENV=production webpack --config webpack/webpack-config.prod.js",
     "clean": "rimraf ./dist"
   },

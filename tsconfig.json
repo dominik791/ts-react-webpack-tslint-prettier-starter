@@ -3,9 +3,13 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "commonjs",
+    "module": "esnext",
     "target": "es5",
-    "jsx": "react"
+    "jsx": "react",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "moduleResolution": "node"
   },
   "include": ["./src/**/*"]
 }
